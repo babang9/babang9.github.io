@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃2</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 공통 class */
+        .clearFix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* layout */
+        .wrap {
+            background-color: white;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #d8d8d8;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .lnb {
+            background-color: gray;
+            width: 400px;
+            margin: 0px 10px 30px auto;
+        }
+
+        .logo {
+            background-color: gray;
+            width: 800px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background: #d8d8d8;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        .menu_1 {
+            background-color: #ff6600;
+            width: 230px;
+            height: 20px;
+            margin: 25px 10px 25px 25px;
+            float: left;
+        }
+        .menu_2 {
+            background-color: #ff6600;
+            width: 230px;
+            height: 20px;
+            margin: 25px 10px 25px 0px;
+            float: left;
+        }
+        .menu_3 {
+            background-color: #ff6600;
+            width: 230px;
+            height: 20px;
+            margin: 25px 10px 25px 0px;
+            float: left;
+        }
+        .menu_4 {
+            background-color: #ff6600;
+            width: 230px;
+            height: 20px;
+            margin: 25px 10px 25px 0px;
+            float: left;
+        }
+
+        main {
+            background: #d8d8d8;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        section{
+            margin-right: 10px;
+            float: left;
+        }
+        .left_1{
+            background-color: gray;
+            width: 180px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .left_2{
+            background-color: gray;
+            width: 180px;
+            height: 300px;
+        }
+        article{
+            float: left;
+        }
+        .right_1{
+            background-color: gray;
+            width: 790px;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+        .right_2{
+            background-color: gray;
+            width: 790px;
+            height: 100px;
+        }
+
+        footer {
+            background: #d8d8d8;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="lnb">lnb</div>
+            <h1 class="logo">logo</h1>
+        </header>
+        <nav class="clearFix">
+                <div class="menu_1">menu</div>
+                <div class="menu_2">menu</div>
+                <div class="menu_3">menu</div>
+                <div class="menu_4">menu</div>
+        </nav>
+        <main class="clearFix">
+            <section>
+                <div class="left_1">left_1</div>
+                <div class="left_2">left_2</div>
+            </section>
+            <article>
+                <div class="right_1">right_1</div>
+                <div class="right_2">right_2</div>
+            </article>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃2</title>
+    <style>
+        /* 공통 class */
+        .clearFix::after {
+            /* 막내를 clear하기 위해서 */
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* 레이아웃 */
+        .wrap {
+            background-color: #ff0;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: rgb(108, 160, 56);
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            background-color: #0ff;
+            margin-bottom: 10px;
+        }
+
+        /* main::after{  ::after 가상선택자
+            content: "";
+            display: block; 태생이 block 아니고 inline이기에 넌 이제부터 block이야 
+            clear: both;
+        } */
+
+        .left_col {
+            background-color: rgb(108, 160, 56);
+            width: 200px;
+            height: 700px;
+            float: left;
+        }
+
+        .right_col {
+            background-color: rgb(108, 160, 56);
+            width: 550px;
+            height: 700px;
+            float: right;
+        }
+
+        footer {
+            background-color: rgb(108, 160, 56);
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>header</header>
+        <main class="clearFix">
+            <div class="left_col">left_col</div>
+            <div class="right_col">right_col</div>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

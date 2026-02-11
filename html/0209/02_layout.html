@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 최종</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        .clearFix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .top {
+            background-color: #ccc;
+            padding: 10px 0 10px 0;
+        }
+
+        header {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            background-color: red;
+            width: 200px;
+            height: 50px;
+            padding-bottom: 10px;
+        }
+
+        .top_menu {
+            background-color: red;
+        }
+
+        nav {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        li {
+            width: 150px;
+            height: 30px;
+            float: left;
+        }
+
+        main {
+            background-color: #ccc;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .secLeft {
+            background-color: #999;
+            width: 1000px;
+            padding: 10px 10px 0 10px;
+            float: left;
+        }
+
+        .secLeft>div {
+            background-color: gray;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .secRight {
+            background-color: yellow;
+            width: 180px;
+            float: right;
+        }
+
+        .login {
+            background-color: gray;
+            height: 150px;
+            margin: 10px 0;
+        }
+
+        .news {
+            background-color: gray;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .survey {
+            background-color: yellowgreen;
+            height: 120px;
+            width: 160px;
+            margin: 0 auto 10px;
+        }
+
+        .notice {
+            background-color: yellowgreen;
+            height: 120px;
+            width: 160px;
+            margin: 0 auto 10px;
+        }
+
+        footer {
+            background-color: gray;
+        }
+
+        .bMenu {
+            height: 50px;
+        }
+        .bMenuCon{
+            background-color: #fff;
+            margin: 10px 0;
+        }
+
+        address {
+            width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <header>
+            <h1 class="logo">LOGO</h1>
+        </header>
+    </div>
+    <div class="top_menu">
+        <nav>
+            <ul class="clearFix">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+                <li><a href="#">MENU5</a></li>
+                <li><a href="#">MENU6</a></li>
+                <li><a href="#">MENU7</a></li>
+                <li><a href="#">MENU8</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="middle">
+        <main class="clearFix">
+            <section class="secLeft">
+                <div>뮤비 영역</div>
+                <div>커뮤니티 영역</div>
+                <div>배너 영역</div>
+                <div>동영상 영역</div>
+                <div>광고 영역</div>
+            </section>
+            <section class="secRight">
+                <article class="login">로그인</article>
+                <article class="news">최근 게시물</article>
+                <article class="survey">설문조사</article>
+                <article class="notice">공지사항</article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <nav class="bMenu"><div class="bMenuCon">하단 메뉴</div></nav>
+        <address>copyright</address>
+    </footer>
+</body>
+
+</html>

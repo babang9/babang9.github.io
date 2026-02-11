@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 5</title>
+    <style>
+        /* reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 공통 class */
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .w1200{
+            width: 1200px;
+            margin: auto;
+        }
+
+        /* layout */
+        .top{
+            background-color: #0fc;
+        }
+        header{
+            background-color: orange;
+            width: 1200px;
+            margin: 0 auto 10px;
+        }
+        .logo{
+            background-color: #888;
+            width: 200px;
+            height: 100px;
+            float: left;
+            margin: 20px;
+        }
+        .lnb{
+            background-color: #888;
+            width: 200px;
+            height: 50px;
+            float: right;
+            margin: 20px;
+        }
+        .mainNav{
+            background-color: #888;
+            height: 40px;
+            clear: both;
+            /* margin-bottom: 10px; */
+        }
+        main{
+            background-color: orange;
+        }
+        main > div{ /* main안에 자식div */
+            background-color: #888;
+            height: 500px;
+            float: left;
+            margin-left: 20px;
+        }
+        .leftCon{
+            width: 200px;
+        }
+        .centerCon{
+            width: 720px;
+        }
+        .rightCon{
+            width: 200px;
+        }
+        footer{
+            background-color: #555;
+        }
+        footer > div{
+            background-color: yellow;
+        }
+        .btmLogo{
+            background-color: #888;
+            width: 200px;
+            height: 50px;
+            margin: 20px;
+            float: left;
+        }
+        .copyright{
+            background-color: #888;
+            width: 940px;
+            height: 40px;
+            margin-top: 25px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <header>
+            <h1 class="logo"><a href="../index.html">LOGO</a></h1>
+            <nav class="lnb">lnb</nav>
+            <nav class="mainNav">mainNav</nav>
+        </header>
+        <main class="w1200 clearFix">
+            <div class="leftCon">leftCon</div>
+            <div class="centerCon">centerCon</div>
+            <div class="rightCon">rightCon</div>
+        </main>
+    </div>
+    <footer>
+        <div class="w1200 clearFix">
+            <h1 class="btmLogo">btmLogo</h1>
+            <address class="copyright">copyright</address>
+        </div>
+    </footer>
+</body>
+</html>

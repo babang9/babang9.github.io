@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin, padding, border 알아보기</title>
+    <style>
+        div{ /* 모든 div 적용 */
+            width: 500px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .margin{
+            margin: 100px;
+        }
+        .padding{
+            padding: 100px;
+        }
+        .border{
+            border: solid 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>margin, padding, border 알아보기</h1>
+    <ul>
+        <li>margin은 상자의 바깥쪽 여백을 말합니다.</li>
+        <li>padding은 상자의 안쪽 여백을 말합니다. </li>
+        <li>border는 상자의 테두리를 말합니다. </li>
+    </ul>
+    <div class="margin padding border">이 <strong>상자의 크기</strong>는 얼마일까요?<br />
+    상자 넓이(500)+좌우 패딩(200)+좌우 보더(200) = <strong>넓이 900px</strong><br />
+    상자 높이(200)+상하 패딩(200)+상하 보더(200) = <strong>높이 600px</strong><br />
+    상자가 차지하는 공간은 마진까지 포함하여 넓이 1100px, 높이 800px 
+    </div>
+    <div class="margin">마진이 적용된 상자</div>
+    <div class="padding">패딩이 적용된 상자</div>
+    <div class="border">보더가 적용된 상자</div>
+</body>
+</html>

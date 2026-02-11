@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 6</title>
+    <style>
+        /* reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* 공통 class */
+        .w1260{
+            width: 1260px;
+            margin: auto;
+        }
+        .clearFix::after{ /* clearFix 상자에 가짜 막내(after)를 만들어 주기 위해 */
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* layout */
+        header{
+            background-color: orange;
+        }
+        header > div{ /* header의 자식인 div 태그에 적용 */
+            padding: 20px 0;
+        }
+        .logo{
+            background-color: red;
+            width: 200px;
+            height: 50px;
+            /* margin: 10px 0; 부모까지 적용된다!!! 그래서 부모태그(div)에서 padding를 준다.*/
+        }
+        .mainNav{
+            background-color: red;
+        }
+        .mainNav ul li {
+            float: left;
+            width: 210px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .mainNav ul li a{
+            display: block; /* block이 되면 자식부모만큼 채워진다. */
+            color: #fff;
+        }
+        .mainNav ul li a:hover{
+            background: #fff;
+            color: red;
+        }
+        main{
+            background-color: #999;
+            width: 1260px;
+            margin: 0 auto 10px;
+        }
+        .leftCon{
+            background-color: #555;
+            width: 880px;
+            padding: 10px;
+            float: left;
+        }
+        .leftCon article{ /* leftCon 밑에 모든 article를 적용 */
+            background-color: #ccc;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .leftCon article:last-child{ /* leftCon 밑에 마지막 자식(last-child)인 article 선택 */
+            margin-bottom: 0;
+        }
+        .rightCon{
+            background-color: #555;
+            width: 340px;
+            float: right;
+        }
+        .rCon_login{
+            background-color: #ccc;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .rCon_new{
+            background-color: #ccc;
+            height: 300px;
+        }
+        .rCon_board{
+            background-color: #0ff;
+            padding: 10px;
+        }
+        .rCon_board section{
+            background-color: #ff0;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .rCon_board section:last-child{
+            margin-bottom: 0;
+        }
+        footer{
+            border-top: 1px solid #999;
+            background-color: #ccc;
+            line-height: 50px; /* 줄간격 */
+        }
+        .btmNav{
+            height: 50px;
+            border-bottom: 1px solid #999;
+        }
+        address{
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="w1260">
+            <h1 class="logo"><a href="../index.html">LOGO</a></h1>
+        </div>
+        <nav class="mainNav">
+            <ul class="w1260 clearFix">
+                <li><a href="#1">MENU1</a></li>
+                <li><a href="#2">MENU2</a></li>
+                <li><a href="#3">MENU3</a></li>
+                <li><a href="#4">MENU4</a></li>
+                <li><a href="#5">MENU5</a></li>
+                <li><a href="#6">MENU6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="clearFix"> <!-- class는 여러개(w1260, clearFix) 가능하죠? -->
+        <div class="leftCon">
+            <article>뮤비 영역</article>
+            <article>커뮤니티 영역</article>
+            <article>배너 영역</article>
+            <article>동영상 강좌</article>
+            <article>광고 영역</article>
+        </div>
+        <div class="rightCon">
+            <article class="rCon_login">로그인</article>
+            <article class="rCon_new">최근 게시물</article>
+            <article class="rCon_board">
+                <section>설문조사</section>
+                <section>공지사항</section>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="btmNav">
+            <nav class="w1260">하단 메뉴</nav>
+        </div>
+        <address class="w1260">저작권 정보</address>
+    </footer>
+</body>
+</html>

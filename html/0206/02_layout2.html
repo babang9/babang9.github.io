@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 4</title>
+    <style>
+        /* reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, li{
+            list-style: none; /* list 스타일 점이나 숫자 등 글머리 기호를 숨김 */
+        }
+
+        /* 공동 class */
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* layout */
+        #wrap{
+            background-color: #ffff00;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header{
+            background: #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .lnb{
+            background-color: #ffa500;
+            width: 500px;
+            height: 30px;
+            margin-bottom: 30px;
+            float: right;
+
+        }
+        .logo{
+            background-color: #ffa500;
+            width: 800px;
+            height: 100px;
+            margin: auto;
+            clear: right;
+        }
+        .gnb{
+            background-color: #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .gnb ul li{
+            float: left;
+            width: 289px;
+            margin-right: 8px;
+            background-color: red;
+        }
+        .gnb ul li:nth-child(2){ /* 2번째 li */
+            background: yellow;
+        }
+        .gnb ul li:last-child{ /* 마지막(last) li */
+            background: blue;
+            margin-right: 0;
+        }
+        main{
+            background: #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .leftCon{
+            background-color: orange;
+            width: 300px;
+            float: left;
+        }
+        .left_1{
+            background-color: red;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .left_2{
+            background-color: red;
+            height: 400px;
+        }
+        .rightCon{
+            background-color: orange;
+            width: 870px;
+            float: right;
+        }
+        .right_1{
+            background-color: red;
+            height: 400px;
+            margin-bottom: 10px;
+        }
+        .right_2{
+            background-color: red;
+            height: 200px;
+        }
+        footer{
+            background-color: #ccc;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav class="lnb">lnb</nav>
+            <h1 class="logo">LOGO</h1>
+        </header>
+        <nav class="gnb">
+            <ul class="clearFix">
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+            </ul>
+        </nav>
+        <main class="clearFix">
+            <div class="leftCon">
+                <article class="left_1">left_1</article>
+                <article class="left_2">left_2</article>
+            </div>
+            <div class="rightCon">
+                <section class="right_1">right_1</section>
+                <section class="right_2">right_2</section>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

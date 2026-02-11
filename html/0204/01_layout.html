@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 만들기1</title>
+    <style>
+        .wrap {
+            background-color: black;
+            width: 1000px;
+            /* margin-left: 100px; 
+            margin-right: 200px;
+            margin-top: 300px;
+            margin-bottom: 400px;
+            margin: 50px 100px 200px 400px; 위에서부터 시계방향으로 마진 적용
+            margin: 0 100px; 위/아래 0, 좌/우 100px 적용
+            margin: 0 500px 100px; 위 0, 좌/우 500px, 아래 100px */
+            margin: 0 auto; /* 상자를 가운데 정렬 */
+            padding: 10px;
+        }
+
+        #top {
+            background-color: aquamarine;
+            width: 1000px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        #left {
+            background-color: cadetblue;
+            width: 200px;
+            height: 500px;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        #center {
+            background-color: chocolate;
+            width: 580px;
+            height: 500px;
+            float: left;
+        }
+
+        #right {
+            background-color: rgb(233, 189, 77);
+            width: 200px;
+            height: 500px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        #footer {
+            background-color: rgb(53, 190, 53);
+            width: 1000px;
+            height: 200px;
+            clear: left; /* float를 clear */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="top">top</div>
+        <div id="left">left</div>
+        <div id="center">center</div>
+        <div id="right">right</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+
+</html>
