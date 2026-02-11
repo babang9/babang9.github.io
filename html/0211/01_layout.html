@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        /* reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+
+        /* 공통 class */
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* layout */
+        .wrap{
+            width: 1200px;
+            margin: auto;
+        }
+        header{
+            background-color: #ccc;
+        }
+        .logo{
+            background-color: orange;
+            width: 300px;
+            height: 90px;
+            float: left;
+        }
+        header ul li{
+            float: left;
+        }
+        li{
+            background-color: darkgreen;
+            width: 180px;
+            height: 30px;
+            margin: 30px auto;
+        }
+        li:last-child{
+            background-color: orange;
+        }
+        main{
+            background-color: white;
+        }
+        .mainImg{
+            background-color: red;
+            height: 400px;
+            margin-bottom: 10px;
+        }
+        .banner{
+            margin-bottom: 10px;
+        }
+        .banner_s{
+            background-color: #777;
+            width: 300px;
+            height: 50px;
+            float: left;
+        }
+        .product{
+            margin-bottom: 10px;
+        }
+        .banner_b{
+            background-color: yellow;
+            width: 400px;
+            height: 150px;
+            float: left;
+        }
+        footer{
+            background-color: #fff;
+        }
+        .btmNav{
+            background-color: aquamarine;
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+        address{
+            background-color: blueviolet;
+            width: 1200px;
+            height: 100px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo">logo</h1>
+            <ul class="clearFix">
+                <li>회사소개</li>
+                <li>제품소개</li>
+                <li>게시판</li>
+                <li>고객지원</li>
+                <li>검색</li>
+            </ul>
+        </header>
+        <main>
+            <div class="mainImg">이미지</div>
+            <div class="banner clearFix">
+                <article class="banner_s">banner_1</article>
+                <article class="banner_s">banner_2</article>
+                <article class="banner_s">banner_3</article>
+                <article class="banner_s">banner_4</article>
+            </div>
+            <div class="product clearFix">
+                <article class="banner_b">banner_1_b</article>
+                <article class="banner_b">banner_2_b</article>
+                <article class="banner_b">banner_3_b</article>
+            </div>
+        </main>
+        <footer>
+            <div class="btmNav">로고</div>
+            <address>주소</address>
+        </footer>
+    </div>
+</body>
+
+</html>

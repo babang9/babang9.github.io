@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* reset */
+* { /* 1 */
+    margin: 0;
+    padding: 0;
+}
+body { /* 9 */
+    font-family: '맑은 고딕', '돋움', Dotum, sans-serif;
+    color: #222;
+    font-size: 13px;
+    /* background-image: url(../images/topbg.jpg); */ /* 27 */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background: url(../images/topbg.jpg) repeat-x;
+}
+li { /* 21 */
+    list-style: none;
+}
+a { /* 22 */
+    color: #222;
+    text-decoration: none;
+}
+img { /* 8 */
+    vertical-align: top; /* 베이스라인을 TOP으로 */
+}
+
+/* 공통 class */
+.clearFix::after { /* 2 */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* layout */
+.wrap { /* 3 */
+    /* background-color: yellow; */
+    width: 989px;
+    margin: auto;
+}
+header { /* 4 */
+    /* background-color: #0ff; */
+}
+.logo { /* 5 */
+    background-color: red;
+    float: left; /* 10 */
+}
+.gnb { /* 6 */
+    /* background-color: #0f0; */
+    float: left; /* 10 */
+    width: 560px; /* 11 */
+    margin-top: 30px;
+    line-height: 29px;
+}
+.gnb ul li { /* 23 */
+    float: left;
+}
+.mainSearch { /* 7 */
+    background-color: orangered;
+    float: left; /* 10 */
+    width: 195px; /* 12 */
+    margin-top: 30px;
+    line-height: 29px;
+}
+main {
+    /* background-color: #00f; */ /* 13 */
+    margin-bottom: 20px; /* 15 */
+}
+.mainImg {
+    margin-bottom: 20px; /* 14 */
+}
+.ban {
+    /* background-color: #0f0; */
+}
+.ban ul li { /* 24 */
+    float: left;
+    margin-right: 5px;
+}
+.ban ul li:last-child { /* 26 */
+    margin-right: 0;
+}
+.bigBan {
+    /* background-color: #f0f; */
+}
+.bigBan ul li {
+    float: left;
+}
+footer {
+    /* background-color: #0ff; */
+}
+.btmLogo { /* 16 */
+    float: left; 
+}
+.copyright { /* 17 */
+    float: left;
+    width: 815px;
+    font-style: normal; /* 19 */
+    margin-top: 14px;
+    line-height: 20px; /* margin-top 14px가 되는 근거(잘 계산하셔) */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지맵과 네임드 앵커 예제</title>
+</head>
+
+<body>
+    <div><a href="../index.html">인덱스 페이지로 돌아가기</a></div>
+    <h1>이미지맵과 네임드 앵커 예제</h1>
+    <div><img src="../0126/images/hand_01.jpg" alt="디테일인포메이션" /></div>
+    <div><img src="../0126/images/hand_02.jpg" alt="썸네일" usemap="#img" />
+        <map name="img">
+            <area shape="rect" coords="35,17,180,253" href="#box1" alt="달콤한도트로"> 
+            <area shape="rect" coords="190,17,342,253" href="#box2" alt="구호로"> 
+            <area shape="rect" coords="356,17,506,253" href="#box3" alt="샤벳으로"> 
+            <area shape="rect" coords="250,17,664,253" href="#box4" alt="빈티지레이스원피스로"> 
+            <area shape="rect" coords="35,264,180,503" href="#box5" alt="크로스로"> 
+            <area shape="rect" coords="195,264,344,503" href="#box6" alt="미니하찌로"> 
+            <area shape="rect" coords="358,264,503,503" href="#box7" alt="아크리스로"> 
+            <area shape="rect" coords="517,264,663,503" href="#box8" alt="달콤한도트로"> 
+        </map>
+    </div>
+    <div id="box1"><a href="#"><img src="../0126/images/hand_03.jpg" alt="달콤한 도트" /></div></a> <br />
+    <div id="box2"><a href="#"><img src="../0126/images/hand_04.jpg" alt="구호" /></div></a> <br />
+    <div id="box3"><a href="#"><img src="../0126/images/hand_05.jpg" alt="샤벳" /></div></a> <br />
+    <div id="box4"><a href="#"><img src="../0126/images/hand_06.jpg" alt="빈티지레이스원피스" /></div></a> <br />
+    <div id="box5"><a href="#"><img src="../0126/images/hand_07.jpg" alt="크로스" /></div></a> <br />
+    <div id="box6"><a href="#"><img src="../0126/images/hand_08.jpg" alt="미니하찌" /></div></a> <br />
+    <div id="box7"><a href="#"><img src="../0126/images/hand_09.jpg" alt=아크리스"" /></div></a> <br />
+    <div id="box8"><a href="#"><img src="../0126/images/hand_10.jpg" alt="달콤한도트" /></div></a> <br />
+</body>
+
+</html>

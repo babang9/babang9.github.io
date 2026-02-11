@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지에 링크걸기</title>
+</head>
+
+<body>
+    <div><a href="../index.html">인덱스 페이지로 돌아가기</a></div>
+    <h1>이미지에 링크걸기</h1>
+    <div>
+        <h2>한개의 이미지에 링크걸기</h2>
+        <div><a href="https://www.naver.com" target="_blank"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Naver_Logotype.svg/1280px-Naver_Logotype.svg.png"
+                    alt="네이버로 이동"></a></div>
+    </div>
+    <div>
+        <h2>한개의 이미지에 링크 여러개 걸기(이미지맵 활용)</h2>
+        <div>핸개의 이미지에 여러개의 링크를 넣을 때는 map 태그를 활용합니다. 
+            <br />
+            map 태그 안에는 반드시 area 태그를 사용하여 영역을 만들어야 합니다. 
+            <br />
+            이미지와 map을 연결하기 위해서는 img 태그에는 usemap 속성을, map 태그에는 name 속성을 동일하게 넣어줍니다. 
+            <br />
+            이때 반드시 usemap 속성의 값은 이름 앞에 #을 붙여줘야 합니다. 
+            <br />
+            area 태그의 속성으로는 shape(영역의 모양:네모/동그라미/다각형), coords(좌표), href(이동할 주소), alt(링크에 대한 설명) 등 필수 속성이 필요합니다. 
+        </div>
+        <div>
+            <img src="../0126/images/hand_02.jpg" usemap="#img1" alt="쇼핑몰" />
+            <map name="img1">
+                <area shape="rect" coords="32,14,180,260" href="https://www.naver.com" alt="네이버로 이동" target="_blank" />
+                <area shape="rect" coords="194,14,340,260" href="https://www.google.com" alt="구글로 이동" target="_blank" />
+                <area shape="rect" coords="356,14,504,260" href="https://www.daum.net" alt="다음으로 이동" target="_blank" />
+                <area shape="circle" coords="589,135,70" href="https://www.youtube.com" alt="유튜브로 이동" target="_blank" />
+                <area shape="circle" coords="110,388,70" href="https://www.facebook.com" alt="페이스북으로 이동" target="_blank" />
+                <area shape="poly" coords="357,267,506,267,505,372,669,372,669,509,357,507" href="https://www.instagram.com" alt="인스타그램으로 이동" target="_blank" />
+            </map>
+        </div>
+    </div>
+</body>
+
+</html>
