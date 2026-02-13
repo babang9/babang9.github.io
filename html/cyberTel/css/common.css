@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: '맑은 고딕', '돋움', Dotum, sans-serif;
+    color: #222;
+    font-size: 13px;
+    /* background-image: url(../images/topbg.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background: url(../images/topbg.jpg) repeat-x;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+img {
+    vertical-align: top; /* 베이스라인을 TOP으로 */
+}
+
+/* 공통 class */
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* layout */
+.wrap {
+    /* background-color: yellow; */
+    width: 989px;
+    margin: auto;
+}
+header {
+    /* background-color: #0ff; */
+}
+.logo {
+    background-color: red;
+    float: left;
+}
+.gnb {
+    /* background-color: #0f0; */
+    float: left;
+    width: 560px;
+    margin-top: 30px;
+    line-height: 29px;
+}
+.gnb ul li {
+    float: left;
+}
+.mainSearch {
+    background-color: orangered;
+    float: left;
+    width: 195px;
+    margin-top: 30px;
+    line-height: 29px;
+}
+main {
+    /* background-color: #00f; */
+    margin-bottom: 20px;
+}
+.mainImg {
+    margin-bottom: 20px;
+}
+.ban {
+    /* background-color: #0f0; */
+}
+.ban ul li {
+    float: left;
+    margin-right: 5px;
+}
+.ban ul li:last-child {
+    margin-right: 0;
+}
+.bigBan {
+    /* background-color: #f0f; */
+}
+.bigBan ul li {
+    float: left;
+}
+footer {
+    /* background-color: #0ff; */
+}
+.btmLogo {
+    float: left; 
+}
+.copyright {
+    float: left;
+    width: 815px;
+    font-style: normal;
+    margin-top: 14px;
+    line-height: 20px; /* margin-top 14px가 되는 근거(잘 계산하셔) */
+}
+
+/* 서브페이지 영역 */
+body.subBody {
+    background-image: url(../images/subimgbg.jpg);
+}
+.leftNav {
+    width: 206px;
+    background: url(../images/leftbg.jpg) repeat-y;
+    float: left;
+    margin-left: 11px;
+}
+.leftNav h3 {
+    margin: 30px 0;
+}
+.leftNav ul {
+    margin-left: 25px;
+}
+.leftNav ul li {
+    /* background-image: url(../images/left_arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: left center; 배경 이미지의 위치를 x축 y축 순서로 써줌 */
+    background: url(../images/left_arrow.jpg) no-repeat 0 10px; 
+    padding-left: 10px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.leftNav ul li a:hover {
+    color: #045CA6;
+    text-decoration: underline;
+}
+.leftNav ul li ul {
+    margin-bottom: 10px;
+}
+.leftNav ul li ul li {
+    background: url(../images/left_point.jpg) 0 9px no-repeat;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+.leftNav > div {
+    background-image: url(../images/leftbgbottom.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.rightCon {
+    width: 742px;
+    /* background: #0ff; */
+    float: right;
+    line-height: 180%; /* 일반 130%, 넉넉히: 180% */
+}
+.rightCon h4 {
+    font-size: 24px;
+    margin: 30px 0;
+}
+.rightCon h5 {
+    color: #045CA6;
+    font-size: 16px;
+    margin: 20px 0;
+}
+.rightCon > div > strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #045CA6;
+}
+
+/* board */
+.tbBoard {
+    width: 742;
+}
+.tbBoard tr th {
+    background-color: #045CA6;
+    color: #fff;
+}
+.tbBoard tr {
+    height: 30px;
+}
+.tbBoard tr td {
+    text-align: center;
+}

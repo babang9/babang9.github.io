@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "맑은 고딕", "돋움", Dotum, "굴림", sans-serif;
+    color: #222;
+    font-size: 13px;
+    /* background: url(../../0211/images/subimgbg.jpg) repeat-x; */
+}
+li {
+    list-style: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* 공통 class */
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* layout */
+.wrap {
+    /* background: yellow; */
+    width: 989px;
+    margin: 0 auto;
+}
+header {
+    background: #fff;
+}
+.logo {
+    float: left;
+}
+.gnb {
+    width: 560px;
+    margin-top: 30px;
+    float: left;
+}
+.gnb ul li {
+    float: left;
+}
+.mainSearch {
+    background: aqua;
+    width: 195px;
+    margin-top: 30px;
+    float: left;
+}
+main {
+    margin-bottom: 20px;
+}
+.con {
+    /* background: green; */
+}
+.leftNav {
+    background: url(../../0211/images/leftbg.jpg);
+    width: 206px;
+    float: left;
+    margin-left: 11px;
+}
+.leftNav h3 {
+    margin: 30px 0;
+}
+.leftNav ul {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.leftNav > ul > li {
+    background: url(../../0211/images/left_point.jpg) no-repeat;
+    padding-left: 10px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.leftNav > div {
+    background-image: url(../../0211/images/leftbg.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.rightCon {
+    background: #fff;
+    width: 742px;
+    float: right;
+    line-height: 160%;
+}
+.rightCon h4 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+.rightCon > div > strong {
+    display: block;
+    font-size: 16px;
+    margin: 30px 0;
+    color: #0f5CA6;
+}
+footer {
+
+}
+.btmLogo {
+    float: left;
+}
+.copyright {
+    width: 815px;
+    float: left;
+    line-height: 20px;
+    margin-top: 14px;
+    font-style: normal;
+}
