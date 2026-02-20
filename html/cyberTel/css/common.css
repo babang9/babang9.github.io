@@ -14,6 +14,9 @@ body {
     /* background-repeat: repeat-x; */
     background: url(../images/topbg.jpg) repeat-x;
 }
+table, tr, th, td {
+    border-spacing: 0;
+}
 li {
     list-style: none;
 }
@@ -59,8 +62,17 @@ header {
     background-color: orangered;
     float: left;
     width: 195px;
-    margin-top: 30px;
+    margin-top: 36px;
     line-height: 29px;
+}
+.mainSearch input[type="text"] {
+    border: 0 none;
+    height: 17px;
+    float: left;
+    width: 171px;
+}
+.mainSearch input[type="image"] {
+    float: left;
 }
 main {
     /* background-color: #00f; */
@@ -166,17 +178,84 @@ body.subBody {
     color: #045CA6;
 }
 
-/* board */
-.tbBoard {
-    width: 742;
+/* 서브페이지내 board table */
+.rightCon table.boardType1 {
+    width: 100%;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    line-height: 30px; /* 세로간격 */
 }
-.tbBoard tr th {
-    background-color: #045CA6;
-    color: #fff;
+.rightCon th {
+    background-color: #045CA6; /* 셀 색상 */
+    color: #fff; /* 폰트 색상 */
 }
-.tbBoard tr {
-    height: 30px;
-}
-.tbBoard tr td {
+.rightCon table.boardType1 tr td {
+    border-top: 1px dotted #ccc;
     text-align: center;
 }
+.rightCon table.boardType1 tr td:nth-child(2) { /* 두번째 td */
+    text-align: left;
+}
+
+/* 서브페이지내 form 부분 */
+form.form01 fieldset {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+form.form01 fieldset legend {
+    color: #045CA6;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+form.form01 fieldset div {
+    margin-bottom: 5px;
+}
+form.form01 fieldset div label.w100 { 
+    width: 100px;
+    display: block;
+    float: left;
+    line-height: 27px;
+}
+form.form01 fieldset div input[type="text"],
+form.form01 fieldset div input[type="password"],
+form.form01 fieldset div select {
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 25px;
+}
+form.form01 fieldset div span {
+    margin-right: 10px;
+}
+form.form01 fieldset table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+form.form01 fieldset table tr th {
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    height: 30px;
+    vertical-align: top;
+}
+form.form01 fieldset table tr td {
+    vertical-align: top;
+}
+form.form01 fieldset table tr td span {
+    display: block;
+}
+form.form01 fieldset textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+form.form01 > div {
+    text-align: center;
+}
+form.form01 > div input { /* input: inline-block 속성 */
+    border: 0 none;
+    background-color: #ccc;
+    width: 120px;
+    height: 30px;
+}
+
