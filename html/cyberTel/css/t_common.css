@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: '맑은 고딕', '돋움', Dotum, sans-serif;
+    color: #222;
+    font-size: 13px;
+    /* background-image: url(../images/topbg.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background: url(../images/topbg.jpg) repeat-x;
+}
+table, tr, th, td {
+    border-spacing: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+}
+
+/* 공통 class */
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* layout */
+.rwap {
+/*     background-color: blueviolet; */
+    width: 989px;
+    margin: auto;
+}
+header {
+    /* background-color: #0ff; */
+}
+.logo {
+/*     background-color: red; */
+    float: left;
+}
+.gnb {
+    width: 560px;
+    margin-top: 30px;
+    line-height: 29px;
+    float: left;
+}
+.gnb ul li {
+    float: left;
+}
+.mainSearch {
+/*     background-color: orange; */
+    width: 195px;
+    margin-top: 36px;
+    line-height: 29px;
+    float: left;
+}
+.mainSearch input[type="text"] {
+    border: 0 none;
+    height: 17px;
+    width: 171px;
+    float: left;
+}
+.mainSearch input[type="image"] {
+    float: left;
+}
+main {
+/*     background-color: green; */
+    margin-bottom: 20px;
+}
+.mainImg {
+    margin-bottom: 20px;
+}
+.ban {
+/*     background-color: red; */
+}
+.ban ul li {
+/*     background-color: green; */
+    float: left;
+}
+.ban ul li:last-child {
+    margin-right: 0;
+}
+.bigBan ul li {
+    float: left;
+}
+footer {
+/*     background-color: yellow; */
+}
+.btmLogo {
+/*     background: #ccc; */
+    float: left;
+}
+address {
+/*     background: red; */
+    float: left;
+    width: 815px;
+    font-style: normal;
+    margin-top: 14px;
+    line-height: 20px;
+}

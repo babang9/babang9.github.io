@@ -60,16 +60,16 @@ header {
 }
 .mainSearch {
     background-color: orangered;
-    float: left;
     width: 195px;
     margin-top: 36px;
     line-height: 29px;
+    float: left;
 }
 .mainSearch input[type="text"] {
     border: 0 none;
     height: 17px;
-    float: left;
     width: 171px;
+    float: left;
 }
 .mainSearch input[type="image"] {
     float: left;
