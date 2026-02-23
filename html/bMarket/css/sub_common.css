@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Nanum Gothic", "맑은 고딕", "돋음체", dotum, sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+/* 공통 class */
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.w943 {
+    width: 943px;
+    margin: auto;
+}
+
+/* layout */
+header {
+    /* background-color: yellow; */
+    border-bottom: 1px solid #588e12;
+    padding-top: 20px;
+}
+.logo {
+    /* background-color: red; */
+    float: left;
+}
+.lnb {
+    /* background-color: aqua; */
+    line-height: 13px;
+    margin-bottom: 38px;
+    float: right;
+}
+.lnb ul li {
+    float: left;
+    margin-left: 30px;
+}
+.gnb {
+    /* background-color: green; */
+    width: 582px;
+    line-height: 34px;
+    float: right;
+}
+.gnb ul li {
+    float: left;
+    width: 97px;
+    height: 34px;
+    text-align: center;
+}
+.gnb ul li a {
+    font-weight: 700;
+    display: block;
+}
+.gnb ul li a:hover {
+    background-color: #588e12;
+    color: #fff;
+}
+
+/* footer */
+.FSite {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.copyright {
+    font-style: normal;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* sub */
+main {
+    background: url(../images/subitembg.jpg) repeat-x;
+}
+.subBar {
+    height: 40px;
+    border-bottom: 1px solid #588e12;
+}
